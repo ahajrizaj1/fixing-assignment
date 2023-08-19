@@ -24,7 +24,7 @@ const MultiToggle = () => {
             </span>
 
             <div className="main__heading">
-              <p>About Us</p>
+              <p>About Us a</p>
               <p className="description">4 articles in this Topic</p>
             </div>
           </div>
