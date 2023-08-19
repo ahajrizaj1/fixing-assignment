@@ -1,0 +1,465 @@
+// first task file =>>>
+
+.first-task {
+    display: flex;
+    padding: 150px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 150vh;
+    width: 100vw;
+    gap: 2rem;
+    .card {
+      display: flex;
+      gap: 1rem;
+      width: 410px;
+      padding: 15px;
+      align-items: center;
+      .logo {
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        width: 70px;
+        padding: 50px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          color: rgb(0, 98, 255);
+          font-size: 30px;
+          font-weight: 700;
+        }
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .title {
+          font-weight: 600;
+        }
+        .description {
+          color: gray;
+        }
+      }
+    }
+  }
+  
+  .btn1 {
+    padding: 5px 40px;
+    border-radius: 6px;
+    background: none;
+    border: none;
+    color: white;
+  }
+  
+  .btn2 {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 12px 45px;
+    border-radius: 20px;
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+  }
+  
+  .btn3 {
+    background: none;
+    border: 1px solid #0066db;
+    color: #0066db;
+    padding: 10px 40px;
+    &:hover {
+      background-color: #0066db;
+      color: white;
+    }
+  }
+  
+  // cards file ==>>
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 200px;
+    justify-content: center;
+    align-items: center;
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 380px;
+      min-width: 380px;
+      height: 350px;
+      flex: 1 1 1;
+      border: 1px solid #ccc;
+      padding: 25px;
+      .upper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .description {
+          color: #c3c2c2;
+          font-size: 16px;
+          letter-spacing: 1px;
+        }
+        .status-name {
+          display: flex;
+          gap: 1.5rem;
+          .img-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
+  /////////// React Tabs ====>
+  
+  .tab-list {
+    border: none;
+    color: gray;
+    width: 75%;
+    margin: 0 auto;
+    .react-tabs__tab--selected {
+      border: none;
+      position: relative;
+    }
+  }
+  
+  .react-tabs__tab--selected:focus:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    left: -4px;
+    right: -4px;
+    bottom: -5px;
+    background: blue;
+  }
+  
+  .tabs {
+    padding: 100px;
+  }
+  
+  .tab-card {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .tab-card__title {
+      font-size: 30px;
+      padding: 1rem;
+    }
+    .tab-card__price-con {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      strong {
+        font-size: 20px;
+      }
+      .price__light {
+        color: rgb(160, 160, 160);
+      }
+    }
+    button {
+      width: 90%;
+      margin: 0 auto 10px;
+    }
+  }
+  
+  
+  
+  .container {
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  
+  // Single Toggle Popup ==>
+  
+  
+  .pop-up {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .question__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 65%;
+      border: 1px solid #ccca;
+      align-items: center;
+      padding: 15px;
+      .first__row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+  }
+  
+  
+  .popup-text {
+    padding: 25px;
+    border-top: 1px solid #eee;
+    margin: 10px auto 0;
+    color: darkgray;
+  }
+  
+  
+  // Multi Toggle Popup ===>>
+  
+  .second-popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    .question__container {
+      display: flex;
+      width: 65%;
+      padding: 20px;
+      justify-content: space-between;
+      flex-direction: column;
+      border: 1px solid #ccc;
+  
+      .inner__container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+      }
+      .left__side {
+        display: flex;
+        gap: 1.2rem;
+        span {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: 1px solid #0066db;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          color: #0066db;
+        }
+        .main__heading {
+          display: flex;
+          flex-direction: column;
+          gap: 0.3rem;
+          p {
+            font-size: 25px;
+          }
+          .description {
+            color: darkgray;
+            font-size: 14px;
+          }
+        }
+      }
+      .arrow {
+        font-size: 25px;
+      }
+    }
+  }
+  
+  
+  .popup-container {
+    display: flex;
+    flex-direction: column;
+    .popup-row {
+      padding: 25px 5px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      flex-direction: column;
+      gap: 1rem;
+      .popup_top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      &:first-child {
+        margin-top: 10px;
+        border-top: 1px solid #ccc;
+      }
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+  
+  
+  /// Show Modal file ====>>>
+  
+  
+  .modal-base {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    button {
+      position: absolute;
+      right: 30px;
+      top: 100px;
+    }
+  }
+  
+  
+  // Backdrop
+  
+  .backdrop {
+    position: absolute;
+    bottom: 10;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  // Modal Pop
+  
+  .modal-pop {
+    position: relative;
+    width: 65%;
+    height: 600px;
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .first-row {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      .first-row__heading {
+        background-color: white;
+        font-size: 22px;
+      }
+      .first-row__right {
+        background-color: white;
+        p {
+          background-color: white;
+          color: #0066db;
+        }
+      }
+    }
+    .pop-styles {
+      display: flex;
+      flex-direction: column;
+      .style_row {
+        background-color: white;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #d4d3d3;
+        align-items: center;
+        .left {
+          background-color: white;
+          color: gray;
+          p {
+            background-color: white;
+          }
+        }
+        .right{
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          background-color: white;
+          p {
+            background-color: white;
+          }
+          .right_box {
+            width: 70px;
+            height: 30px;
+            border-radius: 7px;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
+  .pop-choices {
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    gap: 2rem;
+  }
+  
+  
+  
+  
+  @media (max-width: 450px){
+    .first-task {
+      padding: 10px;
+    }
+    .card {
+      width: 100% !important;
+      .logo {
+        width: 35px !important;
+        height: 35px !important;
+        padding: 25px !important;
+        span {
+          font-size: 18px !important;
+        }
+      }
+    }
+  
+  
+    .cards-container {
+      margin-top: 100px;
+      padding: 30px;
+    }
+    .cards-container .box {
+      padding: 50px;
+      height: 400px;
+      width: 100%;
+    }
+  
+  
+    .tab-list {
+      gap: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+   .tab-card {
+    min-width: 350px;
+   }
+  
+   .second-popup {
+    height: 100vh;
+   }
+  
+   .modal-pop {
+    width: 95%;
+    .left p {
+      font-size: 14px;
+    }
+   }
+   
+  }
+  
+  
+  @media (max-width: 380px){
+    .cards-container {
+      margin-top: 200px;
+      padding: 100px;
+    }
+    .cards-container .box {
+      width: 350px;
+    }
+  }
